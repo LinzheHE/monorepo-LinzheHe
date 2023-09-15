@@ -7,11 +7,7 @@
 """
 from abc import ABC, abstractmethod
 
-class Shape(ABC):
-    def __init__(self, width, height):
-        self._width = width
-        self._height = height
-    
+class Shape(ABC):   
     @abstractmethod
     def set_values(self, width, height):
         pass
@@ -22,6 +18,10 @@ class Shape(ABC):
 
 
 class Rectangle:
+    def __init__(self, width, height):
+        self._width = width
+        self._height = height
+
     def set_values(self, width, height):
         self._width = width
         self._height = height
@@ -38,10 +38,10 @@ class Rectangle:
 
 if __name__ == "__main__":
     # Create a rectangle object
-    rect = Rectangle()
+    rect = Rectangle(3, 4)
 
     # Call a member function
-    rect.set_values(3, 4)
+    rect.set_values(5, 6)
 
     # Print out the area function
     print("area:", rect.area())

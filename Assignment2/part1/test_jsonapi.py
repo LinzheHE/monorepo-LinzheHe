@@ -1,23 +1,24 @@
+# use pytest to test the functions defined in jsonapi.property
+
 from jsonapi import *
+import pytest
 
 # test the encoder and decoder for complex
-test_complex = complex(1, 2)
-print("original complex:", test_complex)
+def test_encoded():
+    test_complex = complex(1, 2)
 
-encoded_complex = json.dumps(test_complex, cls=MyEncoder)
-print("encoded complex:", encoded_complex)
+    encoded_complex = json.dumps(test_complex, cls=MyEncoder)
+    decoded_complex = json.loads(encoded_complex, cls=MyDecoder)
 
-decoded_complex = json.loads(encoded_complex, cls=MyDecoder)
-print("decoded complex:", decoded_complex)
+    assert decoded_complex == test_complex
 
 
 # test the encoder and decoder for range
-test_range = range(1, 10, 3)
-print("original range:", test_range)
+def test_decoded():
+    test_range = range(1, 10, 3)
 
-encoded_range = json.dumps(test_range, cls=MyEncoder)
-print("encoded range:", encoded_range)
-
-decoded_range = json.loads(encoded_range, cls=MyDecoder)
-print("decoded range:", decoded_range)
+    encoded_range = json.dumps(test_range, cls=MyEncoder)
+    decoded_range = json.loads(encoded_range, cls=MyDecoder)
+    
+    assert decoded_range == test_range
 

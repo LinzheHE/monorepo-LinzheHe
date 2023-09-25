@@ -13,6 +13,8 @@ class Image:
         self.m_height = h
         self.m_colorChannels = 3  # Assume we support RGB channels only.
         self.m_Pixels = [random.randint(0, 255) for _ in range(w * h * self.m_colorChannels)]
+        # add Texture as an attribute of Image
+        self.texture = Texture()
 
     """
     def __del__(self):
@@ -38,7 +40,7 @@ class Image:
         self.m_Pixels = [value] * (self.m_width * self.m_height * self.m_colorChannels)
 
 
-class Texture(Image):
+class Texture():
     pass
 
 

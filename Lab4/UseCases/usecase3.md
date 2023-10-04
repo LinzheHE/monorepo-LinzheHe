@@ -6,31 +6,31 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Clear Canvas and Fill with Last Selected Color.
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: When the user press the space key, the canvas should be cleared and filled with the last selected color.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: (1) The program must be running and in a responsive state. (2) The user is on the canvas drawing screen.
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: The user presses the space key.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: (1) The user is on the drawing screen. (2) The user selects a drawing color by pressing the number keys 1-8. (3) The user presses the space key. (4) The system detects the space key press, then clears the canvas and fills it with the last selected color.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: (1) The user may press the space key accidentally. The system could prompt for confiramtion or provide an undo option. (2) If the canvas is empty, or no color has been selected, pressing the space key may not have visible effect.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: Middle to low. Some users may not need this feature.
 
-**When available**: *the targeted release that covers this use case*
+**When available**: second release or later.
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: The user use a keyboard to input the space key.
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: N/A
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: Consider providing a confirmation dialog to prevent accidental press.
 
 <hr>
 

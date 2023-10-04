@@ -6,31 +6,31 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Canvas Size
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: The user aims to set the canvas size to 600 pixels wide, 400 pixels high.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: (1) The program must be running and in a responsive state. (2) The user is on the canvas setting screen.
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: The user selects the option to set the canvas size.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: (1) The user selects the "Canvas size setting" option from the setting menu. (2) The system presents the user with options to set the width and height of the canvas. (3) The user specifies the canvas width as 600 pixels. (4) The use specifies the canvas height as 400 pixels. (5) The system updates the canvas to be 600 pixels wide, 400 pixels high, providing the user a drawable area of the size.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: If the user enter an invalid number for the size (negative, non-numeric), an error message should display, and the user is prompted to enter a valid number.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: Middle-priority. It is essential but not critical.
 
-**When available**: *the targeted release that covers this use case*
+**When available**: Second release.
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: The primary actor communicates through I/O devices. The user use a mouse to click the menu options. The system is responsible for maintaining focus of the window when the user clicks, and should respond within 1 second of any keyboard event. The user is responsible for all other input.
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: N/A
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: (1) Determine whether the software should provide default canvas size for the user. (2) Determine whether changing canvas size while painting would affect existing content on it and how it would affect.
 
 <hr>
 

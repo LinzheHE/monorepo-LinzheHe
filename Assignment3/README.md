@@ -1,13 +1,12 @@
 # TODO Please edit the following information in your assignment
 
-- Name:
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- Name: Linzhe He
+- How many hours did it take you to complete this assignment? 6 hours
+- Did you collaborate with any other students/TAs/Professors? No
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
-- (Optional) What was your favorite part of the assignment?
-- (Optional) How would you improve the assignment?
+  - No
+  - (Optional) What was your favorite part of the assignment?
+- (Optional) How would you improve the assignment? I don't think we have covered enough materials or we get enough reference for doing this assignment. Things became more unclear after I read the hints post on Piazza, because it seems like there are some design that professor want us do, but I am struggled to figure out what it is. I think the instruction of what we are expected to do for this assignment could be more clear. 
 
 # Implementation Logistics
 
